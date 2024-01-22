@@ -34,11 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="aula1.cs" />
-    <Compile Include="teste.cs" />
+    <Compile Include="script.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Google.Apis, Version=1.65.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
