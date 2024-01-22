@@ -16,12 +16,13 @@ public class Carro
 
 namespace Project1
 {
-    internal class Script
+    internal class aula1
     {
         public static void Main(string[] args)
         {
             var listaDeCarros = new List<Carro>();
 
+            //Criação do método que adiciona um objeto Carro na lista de carros
             void AdicionarCarro(List<Carro> lista)
             {
                 Console.WriteLine("Marca: ");
@@ -36,6 +37,8 @@ namespace Project1
                 Console.WriteLine("Carro adicionado com sucesso!");
                 Console.WriteLine("");
             }
+
+            //Criação do método que mostra todos objetos Carro da lista de carros
             void MostrarListaDeCarros(List<Carro> lista)
             {
                 for (int i = 0; i < lista.Count; i++)
@@ -45,6 +48,8 @@ namespace Project1
                     Console.WriteLine("");
                 }
             }
+
+            //Criação do método que remove um objeto Carro da lista de carros
             void RemoverCarro(List<Carro> lista)
             {
                 Console.WriteLine("Informe o ID do Carro que deseja remover da lista: ");
@@ -54,7 +59,7 @@ namespace Project1
                     int cont = 0;
                     for (int i = 0; i < lista.Count; i++)
                     {
-                        if ((perguntarID) == lista[i].id)
+                        if (i == (perguntarID - 1))
                         {
                             lista.Remove(lista[i]);
                             Console.WriteLine("");
@@ -78,6 +83,8 @@ namespace Project1
                     Console.WriteLine("");
                 }
             }
+
+            //Criação de um método para receber a opção desejada pelo usuário
             string PerguntarOpcao()
             {
                 Console.WriteLine("     Concessionária     ");
@@ -86,6 +93,7 @@ namespace Project1
                 return opcao;
             }
 
+            //Criação do fluxo de funcionamento
             void FluxoDeFuncionamento()
             {
                 string opcao;
@@ -106,6 +114,8 @@ namespace Project1
                     }
                 } while (opcao != "4");
             }
+
+            //Inicialização do fluxo de funcionamento chamando o método
             FluxoDeFuncionamento();
         }
     }
