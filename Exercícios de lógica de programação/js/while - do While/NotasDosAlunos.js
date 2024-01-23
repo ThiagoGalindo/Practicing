@@ -9,7 +9,6 @@ do {
     let sexo = prompt("Qual seu sexo? \nDigite M ou F.").toUpperCase();
     totalNotas += notas;
     totalAlunos++;
-    
     if (sexo === "F" && notas > 7){
         totalNotasF++;
     }
@@ -20,7 +19,6 @@ do {
     }
     
     let check = prompt("Deseja continuar? \nDigite S ou N").toUpperCase();
-
     if (check === "S"){
         desejaContinuar = true;
     }
@@ -38,7 +36,6 @@ function calculaMaior (lista){
     let cont = 0;
 
     for (let i = 0; i <= tamanho; i++){
-        
         if (lista[i] > cont){
             cont = lista[i]
         }
