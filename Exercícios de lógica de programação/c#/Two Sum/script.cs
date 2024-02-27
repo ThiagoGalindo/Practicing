@@ -23,7 +23,7 @@ public class Solution
                 break;
             }
         }
-        int[] result = [cont1, cont2];
+        int[] result = [counter1, counter2];
         return result;
     }
 }
